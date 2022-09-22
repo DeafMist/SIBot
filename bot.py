@@ -24,9 +24,3 @@ def bot(text):
     intent = get_intent(text)
     answer = get_response(intent)
     return answer
-
-
-text = ""
-while get_intent(text) != 'bye':
-    text = input('< ')
-    print('>', bot(text))
